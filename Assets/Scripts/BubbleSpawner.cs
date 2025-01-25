@@ -8,11 +8,19 @@ public class BubbleSpawner : MonoBehaviour
     public float powerUpSpawnChance = 0.2f; // Chance to spawn a power-up
 
     private PoolManager _poolManager;
+    private void OnEnable()
+    {
+        BeatDetector.BeatEvent += SpawnOnBeat; // Subscribe to the beat event
+    }
 
+    private void OnDisable()
+    {
+        BeatDetector.BeatEvent -= SpawnOnBeat; // Unsubscribe to the beat event
+    }
     void Start()
     {
         _poolManager = FindFirstObjectByType<PoolManager>();   //<PoolManager>(); // Find the PoolManager in the scene
-        InvokeRepeating("SpawnBubbles", 0, 5f);
+        //InvokeRepeating("SpawnBubbles", 0, 5f);
     }
 
     public void SpawnBubbles()
@@ -27,7 +35,7 @@ public class BubbleSpawner : MonoBehaviour
 
         // Spawn objects at selected positions
         SpawnObjectAtPosition(spawnPoints[index1].position);
-        SpawnObjectAtPosition(spawnPoints[index2].position);
+        //SpawnObjectAtPosition(spawnPoints[index2].position);
     }
 
     private void SpawnObjectAtPosition(Vector3 position)
@@ -42,5 +50,10 @@ public class BubbleSpawner : MonoBehaviour
             BubbleColor randomColor = (BubbleColor)Random.Range(0, System.Enum.GetValues(typeof(BubbleColor)).Length);
             bubble.GetComponent<Bubble>().SetColor(randomColor);
         }
+    }
+    
+    private void SpawnOnBeat()
+    {
+        SpawnBubbles();
     }
 }
