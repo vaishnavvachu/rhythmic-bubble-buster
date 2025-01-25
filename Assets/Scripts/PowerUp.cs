@@ -6,6 +6,8 @@ public class PowerUp : MonoBehaviour,ICollidable
     public BubbleColor newSpikeColor = BubbleColor.Blue;
     public float moveSpeed = 5f; 
     public Vector3 direction;
+    public float deactivateZ = -10f;
+    
     private Material _powerupMaterial;
 
     private void Start()
@@ -16,6 +18,11 @@ public class PowerUp : MonoBehaviour,ICollidable
     void Update()
     {
         transform.Translate(direction * moveSpeed * Time.deltaTime);
+        
+        if (transform.position.z < deactivateZ)
+        {
+            gameObject.SetActive(false); 
+        }
     }
     public void SetColor(BubbleColor bubbleColor)
     {
@@ -41,7 +48,8 @@ public class PowerUp : MonoBehaviour,ICollidable
         if (spike != null)
         {
             spike.ChangeSpikeColor(newSpikeColor);
-            Destroy(gameObject);
+            gameObject.SetActive(false);
+            //Destroy(gameObject);
             Debug.Log($"Spike color changed to {newSpikeColor}");
         }
     }

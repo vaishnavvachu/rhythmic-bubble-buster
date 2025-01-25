@@ -2,13 +2,16 @@ using UnityEngine;
 
 public class BubbleSpawner : MonoBehaviour
 {
-    public GameObject bubblePrefab;
-    public GameObject powerUpPrefab; // Prefab for the power-up
     public Transform[] spawnPoints; // Fixed spawn positions
-    public float powerUpSpawnChance = 0.2f; // 20% chance to spawn a power-up
+    public string bubbleTag = "Bubble"; // Tag for bubbles
+    public string powerUpTag = "PowerUp"; // Tag for power-ups
+    public float powerUpSpawnChance = 0.2f; // Chance to spawn a power-up
 
-    public void Start()
+    private PoolManager _poolManager;
+
+    void Start()
     {
+        _poolManager = FindFirstObjectByType<PoolManager>();   //<PoolManager>(); // Find the PoolManager in the scene
         InvokeRepeating("SpawnBubbles", 0, 5f);
     }
 
@@ -22,7 +25,7 @@ public class BubbleSpawner : MonoBehaviour
             index2 = Random.Range(0, spawnPoints.Length);
         } while (index2 == index1);
 
-        // Determine whether to spawn bubbles or power-ups
+        // Spawn objects at selected positions
         SpawnObjectAtPosition(spawnPoints[index1].position);
         SpawnObjectAtPosition(spawnPoints[index2].position);
     }
@@ -31,11 +34,11 @@ public class BubbleSpawner : MonoBehaviour
     {
         if (Random.value < powerUpSpawnChance) // Spawn a power-up
         {
-            Instantiate(powerUpPrefab, position, Quaternion.identity);
+            _poolManager.SpawnFromPool(powerUpTag, position, Quaternion.identity);
         }
         else // Spawn a bubble
         {
-            GameObject bubble = Instantiate(bubblePrefab, position, Quaternion.identity);
+            GameObject bubble = _poolManager.SpawnFromPool(bubbleTag, position, Quaternion.identity);
             BubbleColor randomColor = (BubbleColor)Random.Range(0, System.Enum.GetValues(typeof(BubbleColor)).Length);
             bubble.GetComponent<Bubble>().SetColor(randomColor);
         }

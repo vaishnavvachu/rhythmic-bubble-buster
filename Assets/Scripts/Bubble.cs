@@ -4,8 +4,10 @@ using UnityEngine.EventSystems;
 public class Bubble : MonoBehaviour, ICollidable
 {
     public float moveSpeed = 5f; 
-    
     public Vector3 direction;
+    public float deactivateZ = -10f; 
+
+    
     private ICollidable _collidableImplementation;
     private Material _bubbleMaterial;
     private BubbleColor _currentBubbleColor;
@@ -17,7 +19,10 @@ public class Bubble : MonoBehaviour, ICollidable
     void Update()
     {
         transform.Translate(direction * moveSpeed * Time.deltaTime);
-        
+        if (transform.position.z < deactivateZ)
+        {
+            gameObject.SetActive(false); 
+        }
     }
 
     public void SetColor(BubbleColor bubbleColor)
@@ -45,7 +50,7 @@ public class Bubble : MonoBehaviour, ICollidable
       
         if (bubbleColor == _currentBubbleColor)
         {
-            Destroy(gameObject); 
+            gameObject.SetActive(false);
             Debug.Log("Bubble popped!");
         }
         else
