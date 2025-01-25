@@ -3,33 +3,41 @@ using UnityEngine;
 public class BubbleSpawner : MonoBehaviour
 {
     public GameObject bubblePrefab;
+    public GameObject powerUpPrefab; // Prefab for the power-up
     public Transform[] spawnPoints; // Fixed spawn positions
-    //public Color[] bubbleColors;
+    public float powerUpSpawnChance = 0.2f; // 20% chance to spawn a power-up
 
     public void Start()
     {
         InvokeRepeating("SpawnBubbles", 0, 5f);
-        //SpawnBubbles();
     }
 
     public void SpawnBubbles()
     {
-        // Randomly spawn two bubbles at distinct points
+        // Randomly select two distinct spawn points
         int index1 = Random.Range(0, spawnPoints.Length);
         int index2;
         do
         {
             index2 = Random.Range(0, spawnPoints.Length);
-        } while (index2 == index1); // Ensure unique spawn points
+        } while (index2 == index1);
 
-        // Set bubble colors and spawn them at the positions
-        SpawnBubbleAtPosition(spawnPoints[index1].position, BubbleColor.Red); // Red
-        SpawnBubbleAtPosition(spawnPoints[index2].position, BubbleColor.Blue); // Blue
+        // Determine whether to spawn bubbles or power-ups
+        SpawnObjectAtPosition(spawnPoints[index1].position);
+        SpawnObjectAtPosition(spawnPoints[index2].position);
     }
 
-    private void SpawnBubbleAtPosition(Vector3 position, BubbleColor color)
+    private void SpawnObjectAtPosition(Vector3 position)
     {
-        GameObject bubble = Instantiate(bubblePrefab, position, Quaternion.identity);
-        bubble.GetComponent<Bubble>().SetColor(color);
+        if (Random.value < powerUpSpawnChance) // Spawn a power-up
+        {
+            Instantiate(powerUpPrefab, position, Quaternion.identity);
+        }
+        else // Spawn a bubble
+        {
+            GameObject bubble = Instantiate(bubblePrefab, position, Quaternion.identity);
+            BubbleColor randomColor = (BubbleColor)Random.Range(0, System.Enum.GetValues(typeof(BubbleColor)).Length);
+            bubble.GetComponent<Bubble>().SetColor(randomColor);
+        }
     }
 }

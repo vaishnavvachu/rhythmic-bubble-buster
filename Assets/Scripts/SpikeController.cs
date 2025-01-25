@@ -35,8 +35,7 @@ public class SpikeController : MonoBehaviour
         moveY = Input.GetAxis("Vertical");
         MoveSpike();
     }
-
-  
+    
    void  MoveSpike()
     {
         if (moveX != 0 || moveY != 0)
@@ -58,6 +57,20 @@ public class SpikeController : MonoBehaviour
         if (collidable != null)
         {
             collidable.OnCollide(currentSpikeColor);
+        }
+    }
+    
+    public void ChangeSpikeColor(BubbleColor newColor)
+    {
+        currentSpikeColor = newColor;
+        UpdateSpikeColor();
+    }
+
+    private void UpdateSpikeColor()
+    {
+        if (_spikeMaterial != null)
+        {
+            _spikeMaterial.color = currentSpikeColor.ToUnityColor();
         }
     }
 }

@@ -840,7 +840,7 @@ MonoBehaviour:
   smoothSpeed: 10
   xBounds: {x: -5, y: 5}
   yBounds: {x: -2, y: 2}
-  currentSpikeColor: {r: 1, g: 0, b: 0, a: 1}
+  currentSpikeColor: 0
 --- !u!54 &773367707
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1088,14 +1088,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bubblePrefab: {fileID: 2198819840947415791, guid: 3e865fc42125fff4c8c3827bbeb43c75, type: 3}
+  powerUpPrefab: {fileID: 7062120507279535403, guid: 9a6b4443535e73d47933b9bf29e59338, type: 3}
   spawnPoints:
   - {fileID: 2000703530}
   - {fileID: 474724272}
   - {fileID: 1336882935}
   - {fileID: 529805161}
-  bubbleColors:
-  - {r: 1, g: 0, b: 0, a: 1}
-  - {r: 0, g: 0, b: 1, a: 1}
+  powerUpSpawnChance: 0.2
 --- !u!1 &1716210641
 GameObject:
   m_ObjectHideFlags: 0
