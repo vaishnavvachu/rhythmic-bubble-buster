@@ -4,7 +4,7 @@ public class BubbleSpawner : MonoBehaviour
 {
     public GameObject bubblePrefab;
     public Transform[] spawnPoints; // Fixed spawn positions
-    public Color[] bubbleColors;
+    //public Color[] bubbleColors;
 
     public void Start()
     {
@@ -23,11 +23,11 @@ public class BubbleSpawner : MonoBehaviour
         } while (index2 == index1); // Ensure unique spawn points
 
         // Set bubble colors and spawn them at the positions
-        SpawnBubbleAtPosition(spawnPoints[index1].position, bubbleColors[0]); // Red
-        SpawnBubbleAtPosition(spawnPoints[index2].position, bubbleColors[1]); // Blue
+        SpawnBubbleAtPosition(spawnPoints[index1].position, BubbleColor.Red); // Red
+        SpawnBubbleAtPosition(spawnPoints[index2].position, BubbleColor.Blue); // Blue
     }
 
-    private void SpawnBubbleAtPosition(Vector3 position, Color color)
+    private void SpawnBubbleAtPosition(Vector3 position, BubbleColor color)
     {
         GameObject bubble = Instantiate(bubblePrefab, position, Quaternion.identity);
         bubble.GetComponent<Bubble>().SetColor(color);
