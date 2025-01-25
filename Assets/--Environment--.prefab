@@ -58,6 +58,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -142,6 +145,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -247,6 +253,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -352,6 +361,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -457,6 +469,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -562,6 +577,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -667,6 +685,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -772,6 +793,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -877,6 +901,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -982,6 +1009,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1087,6 +1117,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1192,6 +1225,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1297,6 +1333,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1402,6 +1441,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1507,6 +1549,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1612,6 +1657,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1717,6 +1765,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1821,6 +1872,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1910,6 +1964,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2015,6 +2072,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2120,6 +2180,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2225,6 +2288,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2330,6 +2396,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2484,15 +2553,17 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_TextWrappingMode: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
+  m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
+  m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
@@ -2720,6 +2791,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2826,6 +2900,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2967,6 +3044,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3053,7 +3133,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7635826562936255635, guid: a55c1b9b30d844c83b2e7a28763ebbf2, type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 11b25648f450a4f308eb2bf6d0e3e58b, type: 2}
     - target: {fileID: 919132149155446097, guid: a55c1b9b30d844c83b2e7a28763ebbf2, type: 3}
@@ -3066,7 +3146,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a55c1b9b30d844c83b2e7a28763ebbf2, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2735700285890658414}
+      addedObject: {fileID: 7029764486528712669}
   m_SourcePrefab: {fileID: 100100000, guid: a55c1b9b30d844c83b2e7a28763ebbf2, type: 3}
 --- !u!4 &143229888181728770 stripped
 Transform:
@@ -3078,7 +3158,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a55c1b9b30d844c83b2e7a28763ebbf2, type: 3}
   m_PrefabInstance: {fileID: 465669212350124521}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2735700285890658414
+--- !u!114 &7029764486528712669
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3087,12 +3167,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 772097404193877176}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5e890ccaaf3d4555a873dbc8177dea6, type: 3}
+  m_Script: {fileID: 11500000, guid: 37d6836d685c8ed4992e0bfc59190156, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetTransforms:
-  - {fileID: 143229888181728770}
-  angularSpeed: 50
+  targetTransforms: []
+  angularSpeed: 10
   offset: 10
   offsetSpeed: 3
 --- !u!1001 &1775740356938534399
@@ -3156,7 +3235,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7635826562936255635, guid: a55c1b9b30d844c83b2e7a28763ebbf2, type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 11b25648f450a4f308eb2bf6d0e3e58b, type: 2}
     - target: {fileID: 919132149155446097, guid: a55c1b9b30d844c83b2e7a28763ebbf2, type: 3}
@@ -3169,14 +3248,14 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a55c1b9b30d844c83b2e7a28763ebbf2, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7560655897071127337}
+      addedObject: {fileID: 3356581082599852067}
   m_SourcePrefab: {fileID: 100100000, guid: a55c1b9b30d844c83b2e7a28763ebbf2, type: 3}
 --- !u!1 &1469822349227897006 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a55c1b9b30d844c83b2e7a28763ebbf2, type: 3}
   m_PrefabInstance: {fileID: 1775740356938534399}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7560655897071127337
+--- !u!114 &3356581082599852067
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3185,12 +3264,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1469822349227897006}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5e890ccaaf3d4555a873dbc8177dea6, type: 3}
+  m_Script: {fileID: 11500000, guid: 37d6836d685c8ed4992e0bfc59190156, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetTransforms:
-  - {fileID: 2246745424131582484}
-  angularSpeed: 20
+  targetTransforms: []
+  angularSpeed: 10
   offset: 10
   offsetSpeed: 1
 --- !u!4 &2246745424131582484 stripped
@@ -3259,7 +3337,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7635826562936255635, guid: a55c1b9b30d844c83b2e7a28763ebbf2, type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 11b25648f450a4f308eb2bf6d0e3e58b, type: 2}
     - target: {fileID: 919132149155446097, guid: a55c1b9b30d844c83b2e7a28763ebbf2, type: 3}
@@ -3272,14 +3350,14 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a55c1b9b30d844c83b2e7a28763ebbf2, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6355746888626217274}
+      addedObject: {fileID: 939121812535177346}
   m_SourcePrefab: {fileID: 100100000, guid: a55c1b9b30d844c83b2e7a28763ebbf2, type: 3}
 --- !u!1 &1173377986319534285 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a55c1b9b30d844c83b2e7a28763ebbf2, type: 3}
   m_PrefabInstance: {fileID: 2056391163335407004}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &6355746888626217274
+--- !u!114 &939121812535177346
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3288,12 +3366,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1173377986319534285}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5e890ccaaf3d4555a873dbc8177dea6, type: 3}
+  m_Script: {fileID: 11500000, guid: 37d6836d685c8ed4992e0bfc59190156, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetTransforms:
-  - {fileID: 1946537604453667447}
-  angularSpeed: 70
+  targetTransforms: []
+  angularSpeed: 10
   offset: 10
   offsetSpeed: 1
 --- !u!4 &1946537604453667447 stripped
@@ -3362,7 +3439,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7635826562936255635, guid: a55c1b9b30d844c83b2e7a28763ebbf2, type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 11b25648f450a4f308eb2bf6d0e3e58b, type: 2}
     - target: {fileID: 919132149155446097, guid: a55c1b9b30d844c83b2e7a28763ebbf2, type: 3}
@@ -3396,14 +3473,38 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a55c1b9b30d844c83b2e7a28763ebbf2, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2592081979239510313}
+      addedObject: {fileID: 4407721329911202093}
+    - targetCorrespondingSourceObject: {fileID: 8164078558771037576, guid: a55c1b9b30d844c83b2e7a28763ebbf2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3595017600310583821}
   m_SourcePrefab: {fileID: 100100000, guid: a55c1b9b30d844c83b2e7a28763ebbf2, type: 3}
+--- !u!1 &4610081171227599984 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: a55c1b9b30d844c83b2e7a28763ebbf2, type: 3}
+  m_PrefabInstance: {fileID: 5671982841526919672}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3595017600310583821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4610081171227599984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37d6836d685c8ed4992e0bfc59190156, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetTransforms: []
+  angularSpeed: 10
+  offset: 10
+  offsetSpeed: 1
 --- !u!1 &4789445739088420009 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a55c1b9b30d844c83b2e7a28763ebbf2, type: 3}
   m_PrefabInstance: {fileID: 5671982841526919672}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2592081979239510313
+--- !u!114 &4407721329911202093
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3412,12 +3513,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 4789445739088420009}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5e890ccaaf3d4555a873dbc8177dea6, type: 3}
+  m_Script: {fileID: 11500000, guid: 37d6836d685c8ed4992e0bfc59190156, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetTransforms:
-  - {fileID: 5277188704357565971}
-  angularSpeed: 10
+  targetTransforms: []
+  angularSpeed: 80
   offset: 10
   offsetSpeed: 1
 --- !u!4 &5277188704357565971 stripped
@@ -3486,7 +3586,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7635826562936255635, guid: a55c1b9b30d844c83b2e7a28763ebbf2, type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 11b25648f450a4f308eb2bf6d0e3e58b, type: 2}
     - target: {fileID: 919132149155446097, guid: a55c1b9b30d844c83b2e7a28763ebbf2, type: 3}
@@ -3499,7 +3599,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a55c1b9b30d844c83b2e7a28763ebbf2, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2695022493912593243}
+      addedObject: {fileID: 3079040626211231298}
   m_SourcePrefab: {fileID: 100100000, guid: a55c1b9b30d844c83b2e7a28763ebbf2, type: 3}
 --- !u!4 &7247023042766068651 stripped
 Transform:
@@ -3511,7 +3611,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a55c1b9b30d844c83b2e7a28763ebbf2, type: 3}
   m_PrefabInstance: {fileID: 7140492886979198016}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2695022493912593243
+--- !u!114 &3079040626211231298
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3520,12 +3620,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 8059553972678295825}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5e890ccaaf3d4555a873dbc8177dea6, type: 3}
+  m_Script: {fileID: 11500000, guid: 37d6836d685c8ed4992e0bfc59190156, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetTransforms:
-  - {fileID: 7247023042766068651}
-  angularSpeed: 80
+  targetTransforms: []
+  angularSpeed: 10
   offset: 10
   offsetSpeed: 1
 --- !u!1001 &7357807198062212374
@@ -3589,7 +3688,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7635826562936255635, guid: a55c1b9b30d844c83b2e7a28763ebbf2, type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 11b25648f450a4f308eb2bf6d0e3e58b, type: 2}
     - target: {fileID: 919132149155446097, guid: a55c1b9b30d844c83b2e7a28763ebbf2, type: 3}
@@ -3602,7 +3701,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a55c1b9b30d844c83b2e7a28763ebbf2, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4158443718274778960}
+      addedObject: {fileID: 7050315856744504471}
   m_SourcePrefab: {fileID: 100100000, guid: a55c1b9b30d844c83b2e7a28763ebbf2, type: 3}
 --- !u!4 &7031974807943123709 stripped
 Transform:
@@ -3614,7 +3713,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a55c1b9b30d844c83b2e7a28763ebbf2, type: 3}
   m_PrefabInstance: {fileID: 7357807198062212374}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &4158443718274778960
+--- !u!114 &7050315856744504471
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3623,12 +3722,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7700389519304050759}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5e890ccaaf3d4555a873dbc8177dea6, type: 3}
+  m_Script: {fileID: 11500000, guid: 37d6836d685c8ed4992e0bfc59190156, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetTransforms:
-  - {fileID: 7031974807943123709}
-  angularSpeed: 30
+  targetTransforms: []
+  angularSpeed: 10
   offset: 10
   offsetSpeed: 1
 --- !u!1001 &8181483791970988741
@@ -3692,7 +3790,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7635826562936255635, guid: a55c1b9b30d844c83b2e7a28763ebbf2, type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 11b25648f450a4f308eb2bf6d0e3e58b, type: 2}
     - target: {fileID: 919132149155446097, guid: a55c1b9b30d844c83b2e7a28763ebbf2, type: 3}
@@ -3705,7 +3803,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a55c1b9b30d844c83b2e7a28763ebbf2, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3101495648348159352}
+      addedObject: {fileID: 4932976815938088151}
   m_SourcePrefab: {fileID: 100100000, guid: a55c1b9b30d844c83b2e7a28763ebbf2, type: 3}
 --- !u!4 &8503008663713518894 stripped
 Transform:
@@ -3717,7 +3815,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a55c1b9b30d844c83b2e7a28763ebbf2, type: 3}
   m_PrefabInstance: {fileID: 8181483791970988741}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &3101495648348159352
+--- !u!114 &4932976815938088151
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3726,12 +3824,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 9028329637797089172}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5e890ccaaf3d4555a873dbc8177dea6, type: 3}
+  m_Script: {fileID: 11500000, guid: 37d6836d685c8ed4992e0bfc59190156, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetTransforms:
-  - {fileID: 8503008663713518894}
-  angularSpeed: 60
+  targetTransforms: []
+  angularSpeed: 10
   offset: 10
   offsetSpeed: 1
 --- !u!1001 &8306178745457694829
@@ -3795,7 +3892,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7635826562936255635, guid: a55c1b9b30d844c83b2e7a28763ebbf2, type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 11b25648f450a4f308eb2bf6d0e3e58b, type: 2}
     - target: {fileID: 919132149155446097, guid: a55c1b9b30d844c83b2e7a28763ebbf2, type: 3}
@@ -3808,7 +3905,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a55c1b9b30d844c83b2e7a28763ebbf2, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5515977305045337271}
+      addedObject: {fileID: 7698693570530059370}
   m_SourcePrefab: {fileID: 100100000, guid: a55c1b9b30d844c83b2e7a28763ebbf2, type: 3}
 --- !u!4 &8417158378041294726 stripped
 Transform:
@@ -3820,7 +3917,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a55c1b9b30d844c83b2e7a28763ebbf2, type: 3}
   m_PrefabInstance: {fileID: 8306178745457694829}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5515977305045337271
+--- !u!114 &7698693570530059370
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3829,11 +3926,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 9188487137801725244}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5e890ccaaf3d4555a873dbc8177dea6, type: 3}
+  m_Script: {fileID: 11500000, guid: 37d6836d685c8ed4992e0bfc59190156, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetTransforms:
-  - {fileID: 8417158378041294726}
-  angularSpeed: 40
+  targetTransforms: []
+  angularSpeed: 10
   offset: 10
   offsetSpeed: 1
