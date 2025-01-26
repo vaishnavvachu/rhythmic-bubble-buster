@@ -86,7 +86,7 @@ public class BubbleSpawner : MonoBehaviour
         bubble.GetComponent<Bubble>().SetColor(color);
     }
 
-    private void SpawnPowerUpAtPosition(Vector3 position, BubbleColor color)
+    public void SpawnPowerUpAtPosition(Vector3 position, BubbleColor color)
     {
         GameObject powerUp = _poolManager.SpawnFromPool(powerUpTag, position, Quaternion.identity);
         powerUp.GetComponent<PowerUp>().SetColor(color); // Assume power-up also uses the BubbleColor system

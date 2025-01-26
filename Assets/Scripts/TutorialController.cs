@@ -7,22 +7,24 @@ public class TutorialController : MonoBehaviour
 {
     public TextMeshProUGUI tutorialText; // Reference to the UI Text for tutorial messages
     public SpikeController spikeController; // Reference to the spike controller
-    public GameObject bubbleSpawner; // Reference to the BubbleSpawner
+    public BubbleSpawner bubbleSpawner; // Reference to the BubbleSpawner
     public GameObject finishMessage; // UI object to display the end of the tutorial
+    public PoolManager poolManager;
 
     private int tutorialStep = 0; // Tracks the current step of the tutorial
     private bool isWaitingForAction = false;
+    
 
     void Start()
     {
-        if (spikeController == null || tutorialText == null || bubbleSpawner == null)
+        if (spikeController == null || tutorialText == null || bubbleSpawner == null || poolManager == null)
         {
             Debug.LogError("TutorialController is missing required references!");
             return;
         }
 
         // Disable bubble spawner at the start
-        bubbleSpawner.SetActive(false);
+        bubbleSpawner.gameObject.SetActive(false);
 
         // Start the tutorial
         StartTutorial();
@@ -69,12 +71,21 @@ public class TutorialController : MonoBehaviour
         switch (tutorialStep)
         {
             case 1:
+                tutorialStep++;
                 ShowMessage("Great! Now, move closer to the bubbles to pop them.", 5f);
-                bubbleSpawner.SetActive(true); // Enable bubble spawner
+                bubbleSpawner.gameObject.SetActive(true); // Enable bubble spawner
                 break;
 
             case 2:
                 ShowMessage("Pop the bubbles to complete the tutorial.", 5f);
+                break;
+            case 3:
+                ShowMessage("Now, collect the power-up bubble to change the spike's color.", 5f);
+                SpawnPowerUpBubble(); // Trigger bubble spawning, which can include power-ups
+                break;
+
+            case 4:
+                ShowMessage("Press Space to swap between collected colors.", 5f);
                 break;
 
             default:
@@ -82,13 +93,26 @@ public class TutorialController : MonoBehaviour
                 break;
         }
     }
+    private void SpawnPowerUpBubble()
+    {
+        // Temporarily bypass level-based conditions for power-up spawning
+        bubbleSpawner.SpawnPowerUpAtPosition(bubbleSpawner.spawnPoints[Random.Range(0, bubbleSpawner.spawnPoints.Length)].position, BubbleColor.Blue);
+    }
 
     public void OnBubblePopped()
     {
-        if (tutorialStep == 2)
+        Debug.Log("OnBubblePopped called!"); 
+        if (tutorialStep == 3)
         {
             tutorialStep++;
             ShowMessage("Well done! You've completed the tutorial.", 5f);
+            //EndTutorial();
+        }
+        else if (tutorialStep == 2)
+        {
+            // Once the player collects the power-up bubble, proceed to the next step
+            tutorialStep++;
+            ShowMessage("Good job! You've collected the power-up bubble.", 5f);
             EndTutorial();
         }
     }
@@ -96,7 +120,7 @@ public class TutorialController : MonoBehaviour
     void EndTutorial()
     {
         tutorialText.text = "";
-        bubbleSpawner.SetActive(false);
+        bubbleSpawner.gameObject.SetActive(false);
         if (finishMessage != null)
         {
             finishMessage.SetActive(true); // Display end of tutorial message

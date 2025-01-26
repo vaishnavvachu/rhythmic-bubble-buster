@@ -15,6 +15,7 @@ public class SpikeController : MonoBehaviour
     private Vector3 targetPosition;
     private Vector3 startPosition;
     private Material _spikeMaterial;
+    public TutorialController tutorialController;
     void Start()
     {
         SetColor(currentSpikeColor);
@@ -64,6 +65,11 @@ public class SpikeController : MonoBehaviour
         {
             collidable.OnCollide(currentSpikeColor);
         }
+        
+        if (tutorialController != null)
+        {
+            tutorialController.OnBubblePopped(); // Call this to update the tutorial
+        }
     }
     private void HandleColorSwitch()
     {
@@ -83,6 +89,10 @@ public class SpikeController : MonoBehaviour
         {
             collectedColors.Add(color);
             Debug.Log($"Collected new color: {color}");
+        }
+        if (tutorialController != null)
+        {
+            tutorialController.OnBubblePopped(); // Call this to update the tutorial
         }
     }
   
