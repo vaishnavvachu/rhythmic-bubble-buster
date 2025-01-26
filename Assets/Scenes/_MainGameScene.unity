@@ -119,6 +119,55 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &9916245
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9916247}
+  - component: {fileID: 9916246}
+  m_Layer: 0
+  m_Name: VFXManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &9916246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9916245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f0202cd5969dd540aad40f7df968b81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bubblePopTag: BubblePop
+  idleTag: IdleVFX
+  perfectTag: PerfectVFX
+  goodTag: GoodVFX
+  missedTag: MissedVFX
+--- !u!4 &9916247
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9916245}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &189754490
 GameObject:
   m_ObjectHideFlags: 0
@@ -1020,7 +1069,7 @@ GameObject:
   - component: {fileID: 114968278495857921}
   - component: {fileID: 82330127767947865}
   m_Layer: 0
-  m_Name: Rhythm Visualizator Pro (1)
+  m_Name: 'Rhythm Visualizator Pro '
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1289,6 +1338,7 @@ MonoBehaviour:
   - {fileID: 529805161}
   bubbleTag: Bubble
   powerUpTag: PowerUp
+  level: 1
   powerUpSpawnChance: 0.2
 --- !u!114 &1538969616
 MonoBehaviour:
@@ -1341,6 +1391,21 @@ MonoBehaviour:
   - tag: PowerUp
     prefab: {fileID: 7062120507279535403, guid: 9a6b4443535e73d47933b9bf29e59338, type: 3}
     size: 5
+  - tag: PerfectVFX
+    prefab: {fileID: 7199099639332049800, guid: 43cb0d93ced950e448a3302385d90949, type: 3}
+    size: 50
+  - tag: GoodVFX
+    prefab: {fileID: 4621360520244677866, guid: 8716b1c54dd076543a52a943bfb4e0b1, type: 3}
+    size: 2
+  - tag: LateVFX
+    prefab: {fileID: 1823678868370113836, guid: c7167655ef3e30b48a20330bb925e09e, type: 3}
+    size: 2
+  - tag: MissedVFX
+    prefab: {fileID: 7125220346418992845, guid: ae49333fff358314db53b54d427d82f8, type: 3}
+    size: 50
+  - tag: BubblePop
+    prefab: {fileID: 7410904351034076378, guid: 9611470e804e8db46988e11f1a6a1508, type: 3}
+    size: 50
 --- !u!4 &1709203421
 Transform:
   m_ObjectHideFlags: 0
@@ -22272,3 +22337,4 @@ SceneRoots:
   - {fileID: 1051551105}
   - {fileID: 8781032375538235951}
   - {fileID: 189754492}
+  - {fileID: 9916247}

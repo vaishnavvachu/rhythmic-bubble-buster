@@ -18,10 +18,12 @@ public class Bubble : MonoBehaviour, ICollidable
     private ICollidable _collidableImplementation;
     private Material _bubbleMaterial;
     private BubbleColor _currentBubbleColor;
+    private VFXManager vfxManager;
     void Start()
     {
         direction = new Vector3(0, 0, -1);
         spawnTime = Time.time;
+        vfxManager = FindObjectOfType<VFXManager>();
     }
 
     public string EvaluateTiming()
@@ -43,9 +45,9 @@ public class Bubble : MonoBehaviour, ICollidable
         transform.Translate(direction * moveSpeed * Time.deltaTime);
         if (transform.position.z < deactivateZ)
         {
+            gameObject.SetActive(false);
             ScoreManager.Instance.AddScore(-10); // Penalty for missed bubble
-            Debug.Log("Missed bubble!");
-            gameObject.SetActive(false); 
+            vfxManager.PlayMissedVFX(transform.position);
         }
        
     }
@@ -75,30 +77,30 @@ public class Bubble : MonoBehaviour, ICollidable
       
         if (bubbleColor == _currentBubbleColor)
         {
-            string result = EvaluateTiming();
+            string result = "Perfect";
 
             switch (result)
             {
                 case "Perfect":
                     ScoreManager.Instance.AddScore(100); // Perfect score
-                    Debug.Log("Perfect pop!");
+                    vfxManager.PlayPerfectVFX(transform.position);
                     break;
                 case "Good":
                     ScoreManager.Instance.AddScore(50); // Good score
-                    Debug.Log("Good pop!");
+                    vfxManager.PlayGoodVFX(transform.position);
                     break;
                 case "Late":
                     ScoreManager.Instance.AddScore(20); // Late score
-                    Debug.Log("Late pop!");
+                    vfxManager.PlayLateVFX(transform.position);
                     break;
             }
+            vfxManager.PlayBubblePopVFX(transform.position);
             gameObject.SetActive(false);
         }
         else
         {
             ScoreManager.Instance.AddScore(-10); // Penalty for missed bubble
-            Debug.Log("Missed bubble!");
-            Debug.Log("Missed or wrong color!");
+            vfxManager.PlayMissedVFX(transform.position);
         }
     }
 }
