@@ -3,10 +3,10 @@ using UnityEngine;
 [System.Serializable]
 public enum BubbleColor
 {
-    Red,
-    Green,
-    Blue,
-    Yellow
+    Red = 0,
+    Blue = 1,
+    Green = 2,
+    Yellow = 3
 }
 
 public static class BubbleColorExtensions
@@ -17,8 +17,8 @@ public static class BubbleColorExtensions
         return bubbleColor switch
         {
             BubbleColor.Red => Color.red,
-            BubbleColor.Green => Color.green,
             BubbleColor.Blue => Color.blue,
+            BubbleColor.Green => Color.green,
             BubbleColor.Yellow => Color.yellow,
             _ => Color.white, // Default color if needed
         };
