@@ -3,7 +3,7 @@ using UnityEngine.EventSystems;
 
 public class Bubble : MonoBehaviour, ICollidable
 {
-    public float moveSpeed = 5f; 
+    public float moveSpeed = 7.5f; 
     public Vector3 direction;
     public float deactivateZ = -10f; 
 
