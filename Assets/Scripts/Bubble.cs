@@ -1,11 +1,16 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class Bubble : MonoBehaviour
+public class Bubble : MonoBehaviour, ICollidable
 {
     public float moveSpeed = 5f; 
-    public Color bubbleColor; 
     public Vector3 direction;
+    public float deactivateZ = -10f; 
 
+    
+    private ICollidable _collidableImplementation;
+    private Material _bubbleMaterial;
+    private BubbleColor _currentBubbleColor;
     void Start()
     {
         direction = new Vector3(0, 0, -1);
@@ -14,31 +19,43 @@ public class Bubble : MonoBehaviour
     void Update()
     {
         transform.Translate(direction * moveSpeed * Time.deltaTime);
-        if (transform.position.z <= 0.1f)
+        if (transform.position.z < deactivateZ)
         {
-            CheckCollision();
+            gameObject.SetActive(false); 
         }
     }
 
-    private void CheckCollision()
+    public void SetColor(BubbleColor bubbleColor)
     {
-        GameObject spike = GameObject.FindWithTag("Spike");
-        SpikeMovementController spikeController = spike.GetComponent<SpikeMovementController>();
-
-        if (spikeController != null && spikeController.currentSpikeColor == bubbleColor)
+        _currentBubbleColor = bubbleColor;
+        _bubbleMaterial = GetComponent<Renderer>().material;
+        if (_bubbleMaterial != null)
         {
-            Destroy(gameObject); // Pop the bubble if color matches
+            _bubbleMaterial.color = bubbleColor.ToUnityColor();
+        }
+    }
+
+    public void PlaySFX()
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public void PlayVFX()
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public void OnCollide(BubbleColor bubbleColor)
+    {
+      
+        if (bubbleColor == _currentBubbleColor)
+        {
+            gameObject.SetActive(false);
             Debug.Log("Bubble popped!");
         }
         else
         {
-            //Debug.Log("Missed or wrong color!");
+            Debug.Log("Missed or wrong color!");
         }
-    }
-
-    public void SetColor(Color color)
-    {
-        bubbleColor = color;
-        GetComponent<Renderer>().material.color = color;
     }
 }
