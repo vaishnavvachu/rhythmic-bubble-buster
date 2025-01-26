@@ -31,7 +31,7 @@ public class VFXManager : MonoBehaviour
     // Function to handle bubble pop event
     public void PlayBubblePopVFX(Vector3 position)
     {
-        SpawnVFX(bubblePopTag, position);
+        //SpawnVFX(bubblePopTag, position);
     }
 
     // Function to handle idle event
