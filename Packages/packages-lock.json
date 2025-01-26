@@ -11,7 +11,7 @@
     },
     "com.unity.burst": {
       "version": "1.8.18",
-      "depth": 2,
+      "depth": 1,
       "source": "registry",
       "dependencies": {
         "com.unity.mathematics": "1.2.1",
@@ -28,7 +28,7 @@
     },
     "com.unity.collections": {
       "version": "2.5.1",
-      "depth": 2,
+      "depth": 1,
       "source": "registry",
       "dependencies": {
         "com.unity.burst": "1.8.17",
@@ -72,9 +72,21 @@
       },
       "url": "https://packages.unity.com"
     },
+    "com.unity.jobs": {
+      "version": "0.50.0-preview.9",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.burst": "1.6.4",
+        "com.unity.collections": "1.2.3",
+        "com.unity.mathematics": "1.2.1",
+        "com.unity.nuget.mono-cecil": "1.10.1"
+      },
+      "url": "https://packages.unity.com"
+    },
     "com.unity.mathematics": {
       "version": "1.3.2",
-      "depth": 2,
+      "depth": 1,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
@@ -89,7 +101,7 @@
     },
     "com.unity.nuget.mono-cecil": {
       "version": "1.11.4",
-      "depth": 3,
+      "depth": 2,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
@@ -175,7 +187,7 @@
     },
     "com.unity.test-framework.performance": {
       "version": "3.0.3",
-      "depth": 3,
+      "depth": 2,
       "source": "registry",
       "dependencies": {
         "com.unity.test-framework": "1.1.31",
@@ -204,6 +216,15 @@
         "com.unity.modules.imgui": "1.0.0"
       }
     },
+    "com.unity.visualeffectgraph": {
+      "version": "10.3.2",
+      "depth": 1,
+      "source": "builtin",
+      "dependencies": {
+        "com.unity.shadergraph": "17.0.3",
+        "com.unity.render-pipelines.core": "17.0.3"
+      }
+    },
     "com.unity.visualscripting": {
       "version": "1.9.5",
       "depth": 0,
@@ -213,6 +234,32 @@
         "com.unity.modules.jsonserialize": "1.0.0"
       },
       "url": "https://packages.unity.com"
+    },
+    "voxell.audio": {
+      "version": "https://github.com/nixon-voxell/UnityAudioVisualizer.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.visualeffectgraph": "10.3.2",
+        "com.unity.collections": "1.0.0-pre.5",
+        "com.unity.jobs": "0.11.0-preview.6",
+        "com.unity.burst": "1.5.5",
+        "voxell.util": "1.4.3"
+      },
+      "hash": "4cf5935c20cd5f5cfaecd8ae6cd70e4fa784bb33"
+    },
+    "voxell.util": {
+      "version": "https://github.com/nixon-voxell/UnityUtil.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.mathematics": "1.2.6",
+        "com.unity.collections": "1.2.3",
+        "com.unity.jobs": "0.50.0-preview.9",
+        "com.unity.burst": "1.6.5",
+        "com.unity.test-framework": "1.1.30"
+      },
+      "hash": "a3397bbd88f8e0d3ff2214b8c4419ea4c1a787bf"
     },
     "com.unity.modules.accessibility": {
       "version": "1.0.0",
