@@ -68,7 +68,8 @@ public class SoundManager : MonoBehaviour
     {
         if (sfxSource != null && buttonClickClip != null)
         {
-            sfxSource.PlayOneShot(buttonClickClip);
+            //sfxSource.PlayOneShot(buttonClickClip);
+            sfxSource.Play();
         }
     }
 }
