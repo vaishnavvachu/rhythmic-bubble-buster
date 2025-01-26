@@ -932,6 +932,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Violet
       objectReference: {fileID: 0}
+    - target: {fileID: 2148297329499001648, guid: 295fa97eb3407dd4b9d0cee9411648fb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -948,6 +952,10 @@ PrefabInstance:
     - target: {fileID: 3014538994347625917, guid: 8ff4a465009639242bda71446ab115ee, type: 3}
       propertyPath: m_Name
       value: Orange
+      objectReference: {fileID: 0}
+    - target: {fileID: 3014538994347625917, guid: 8ff4a465009639242bda71446ab115ee, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7734423653534958743, guid: 8ff4a465009639242bda71446ab115ee, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1005,6 +1013,10 @@ PrefabInstance:
     - target: {fileID: 2466219481057091558, guid: c77c89d62baf23b42aca900a7bcebbbc, type: 3}
       propertyPath: m_Name
       value: Pink
+      objectReference: {fileID: 0}
+    - target: {fileID: 2466219481057091558, guid: c77c89d62baf23b42aca900a7bcebbbc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4979649372168664420, guid: c77c89d62baf23b42aca900a7bcebbbc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1103,6 +1115,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blue
       objectReference: {fileID: 0}
+    - target: {fileID: 5607624455725307470, guid: 8f9364e2619bbed449ef0e2183aa5895, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1160,6 +1176,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Yellow
       objectReference: {fileID: 0}
+    - target: {fileID: 8976874135539254644, guid: ff7406ed91db3ae45a0cbfa1813889a1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1216,6 +1236,10 @@ PrefabInstance:
     - target: {fileID: 7488571089691623862, guid: 375aa3fccf55c094eae53fed225c6681, type: 3}
       propertyPath: m_Name
       value: Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 7488571089691623862, guid: 375aa3fccf55c094eae53fed225c6681, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

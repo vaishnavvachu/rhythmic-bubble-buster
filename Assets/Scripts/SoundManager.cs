@@ -66,9 +66,8 @@ public class SoundManager : MonoBehaviour
     
     public void PlayButtonClickSound()
     {
-        if (sfxSource != null && buttonClickClip != null)
+        if (sfxSource != null)
         {
-            //sfxSource.PlayOneShot(buttonClickClip);
             sfxSource.Play();
         }
     }
