@@ -51,7 +51,7 @@ public class Bubble : MonoBehaviour, ICollidable
         if (bubbleColor == _currentBubbleColor)
         {
             gameObject.SetActive(false);
-            Debug.Log("Bubble popped!");
+           
         }
         else
         {
