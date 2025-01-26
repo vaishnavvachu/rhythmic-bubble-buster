@@ -47,7 +47,7 @@ public class PowerUp : MonoBehaviour,ICollidable
         SpikeController spike = FindFirstObjectByType<SpikeController>();
         if (spike != null)
         {
-            spike.ChangeSpikeColor(newSpikeColor);
+            spike.CollectColor(newSpikeColor);
             gameObject.SetActive(false);
             //Destroy(gameObject);
             Debug.Log($"Spike color changed to {newSpikeColor}");

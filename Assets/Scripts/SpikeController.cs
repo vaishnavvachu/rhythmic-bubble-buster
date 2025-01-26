@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class SpikeController : MonoBehaviour
@@ -9,6 +10,8 @@ public class SpikeController : MonoBehaviour
     public Vector2 yBounds = new Vector2(-10f, 10f); // Movement limits on Y-axis
     public BubbleColor currentSpikeColor; // Initial color of the spike
 
+    private List<BubbleColor> collectedColors = new List<BubbleColor>();
+    private int currentColorIndex = 0;
     private Vector3 targetPosition;
     private Vector3 startPosition;
     private Material _spikeMaterial;
@@ -16,7 +19,9 @@ public class SpikeController : MonoBehaviour
     {
         SetColor(currentSpikeColor);
         startPosition = transform.position;  // Set the starting position (center)
-        targetPosition = startPosition;      // Initialize the target position to the center
+        targetPosition = startPosition; 
+        
+        collectedColors.Add(currentSpikeColor);// Initialize the target position to the center
     }
     public void SetColor(BubbleColor bubbleColor)
     {
@@ -34,6 +39,7 @@ public class SpikeController : MonoBehaviour
         moveX = Input.GetAxis("Horizontal");
         moveY = Input.GetAxis("Vertical");
         MoveSpike();
+        HandleColorSwitch();
     }
     
    void  MoveSpike()
@@ -59,12 +65,27 @@ public class SpikeController : MonoBehaviour
             collidable.OnCollide(currentSpikeColor);
         }
     }
-    
-    public void ChangeSpikeColor(BubbleColor newColor)
+    private void HandleColorSwitch()
     {
-        currentSpikeColor = newColor;
-        UpdateSpikeColor();
+        // Press a button (e.g., Space) to cycle through colors
+        if (Input.GetKeyDown(KeyCode.Space) && collectedColors.Count > 1)
+        {
+            currentColorIndex = (currentColorIndex + 1) % collectedColors.Count;
+            currentSpikeColor = collectedColors[currentColorIndex];
+
+            Debug.Log($"Switched to color: {currentSpikeColor}");
+            UpdateSpikeColor();
+        }
     }
+    public void CollectColor(BubbleColor color)
+    {
+        if (!collectedColors.Contains(color))
+        {
+            collectedColors.Add(color);
+            Debug.Log($"Collected new color: {color}");
+        }
+    }
+  
 
     private void UpdateSpikeColor()
     {
